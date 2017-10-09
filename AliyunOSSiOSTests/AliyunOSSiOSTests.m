@@ -23,7 +23,7 @@ NSString * const TEST_BUCKET = @"ios-sdk-test-1";
 NSString * const PUBLIC_BUCKET = @"public-read-write-android";
 NSString * const ENDPOINT = @"https://oss-cn-hangzhou.aliyuncs.com";
 NSString * const MultipartUploadObjectKey = @"multipartUploadObject";
-NSString * const StsTokenURL = @"http://localhost:8080/distribute-token.json";
+NSString * const StsTokenURL = @"http://30.40.38.95:5500/sts/getsts";
 
 static NSArray * fileNameArray;
 static NSArray * fileSizeArray;

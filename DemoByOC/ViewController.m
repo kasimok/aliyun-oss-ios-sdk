@@ -115,6 +115,7 @@ NSString* const ENDPOINT = @"http://oss-cn-hangzhou.aliyuncs.com";
             NSLog(@"fail");
         }
     }];
+
 }
 
 - (void)initSTSToken{

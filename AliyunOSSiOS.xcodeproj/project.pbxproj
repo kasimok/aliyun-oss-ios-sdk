@@ -63,6 +63,10 @@
 		4CE524771F6267BB00DD3DCF /* Constant.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE524761F6267BB00DD3DCF /* Constant.m */; };
 		4CEF14F81F5522A1007010B8 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 216256EF1CF1B1580086458F /* SystemConfiguration.framework */; };
 		9418946C1DEB4A7800FFB760 /* AliyunOSSiOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 9418946B1DEB4A7800FFB760 /* AliyunOSSiOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D1965D681F7E45C600188174 /* DLQMultiDownloadQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = D1965D661F7E45C600188174 /* DLQMultiDownloadQueue.h */; };
+		D1965D691F7E45C600188174 /* DLQMultiDownloadQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = D1965D671F7E45C600188174 /* DLQMultiDownloadQueue.m */; };
+		D1965D6C1F7E46AD00188174 /* DLQData.h in Headers */ = {isa = PBXBuildFile; fileRef = D1965D6A1F7E46AD00188174 /* DLQData.h */; };
+		D1965D6D1F7E46AD00188174 /* DLQData.m in Sources */ = {isa = PBXBuildFile; fileRef = D1965D6B1F7E46AD00188174 /* DLQData.m */; };
 		D1C3D8BD1F667021002F840A /* python in Resources */ = {isa = PBXBuildFile; fileRef = D1C3D8BC1F667021002F840A /* python */; };
 /* End PBXBuildFile section */
 
@@ -147,6 +151,10 @@
 		4CE524751F6267BB00DD3DCF /* Constant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
 		4CE524761F6267BB00DD3DCF /* Constant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constant.m; sourceTree = "<group>"; };
 		9418946B1DEB4A7800FFB760 /* AliyunOSSiOS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AliyunOSSiOS.h; sourceTree = "<group>"; };
+		D1965D661F7E45C600188174 /* DLQMultiDownloadQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DLQMultiDownloadQueue.h; path = ../../../research/ios/TestDownLoad/TestDownLoad/DLQMultiDownloadQueue.h; sourceTree = "<group>"; };
+		D1965D671F7E45C600188174 /* DLQMultiDownloadQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DLQMultiDownloadQueue.m; path = ../../../research/ios/TestDownLoad/TestDownLoad/DLQMultiDownloadQueue.m; sourceTree = "<group>"; };
+		D1965D6A1F7E46AD00188174 /* DLQData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DLQData.h; path = ../../../research/ios/TestDownLoad/TestDownLoad/DLQData.h; sourceTree = "<group>"; };
+		D1965D6B1F7E46AD00188174 /* DLQData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DLQData.m; path = ../../../research/ios/TestDownLoad/TestDownLoad/DLQData.m; sourceTree = "<group>"; };
 		D1C3D8BC1F667021002F840A /* python */ = {isa = PBXFileReference; lastKnownFileType = folder; path = python; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -267,6 +275,10 @@
 		21028C071BA9AC3C00C2A6BA /* ThirdParty */ = {
 			isa = PBXGroup;
 			children = (
+				D1965D6A1F7E46AD00188174 /* DLQData.h */,
+				D1965D6B1F7E46AD00188174 /* DLQData.m */,
+				D1965D661F7E45C600188174 /* DLQMultiDownloadQueue.h */,
+				D1965D671F7E45C600188174 /* DLQMultiDownloadQueue.m */,
 				21126AEE1BE8DEF400D85DF1 /* OSSTask */,
 				21028BEE1BA9AC3600C2A6BA /* OSSXMLDictionary.h */,
 				21028BEF1BA9AC3600C2A6BA /* OSSXMLDictionary.m */,
@@ -361,8 +373,10 @@
 				21028BFA1BA9AC3600C2A6BA /* OSSCompat.h in Headers */,
 				21028BFE1BA9AC3600C2A6BA /* OSSModel.h in Headers */,
 				21028BF81BA9AC3600C2A6BA /* OSSClient.h in Headers */,
+				D1965D681F7E45C600188174 /* DLQMultiDownloadQueue.h in Headers */,
 				216256E61CF1835F0086458F /* OSSIPv6Adapter.h in Headers */,
 				216256E81CF1835F0086458F /* OSSIPv6PrefixResolver.h in Headers */,
+				D1965D6C1F7E46AD00188174 /* DLQData.h in Headers */,
 				21028C021BA9AC3600C2A6BA /* OSSService.h in Headers */,
 				214E1BA61CD5FE17004F8083 /* OSSTaskCompletionSource.h in Headers */,
 				214E1B8A1CD5E2F9004F8083 /* OSSHttpdns.h in Headers */,
@@ -522,9 +536,11 @@
 				214E1B8B1CD5E2F9004F8083 /* OSSHttpdns.m in Sources */,
 				214E1B9F1CD5FE17004F8083 /* OSSCancellationTokenRegistration.m in Sources */,
 				21028C041BA9AC3600C2A6BA /* OSSUtil.m in Sources */,
+				D1965D691F7E45C600188174 /* DLQMultiDownloadQueue.m in Sources */,
 				216256EB1CF1835F0086458F /* OSSReachabilityManager.m in Sources */,
 				214E1B9D1CD5FE17004F8083 /* OSSCancellationToken.m in Sources */,
 				214E1B9B1CD5FE17004F8083 /* OSSBolts.m in Sources */,
+				D1965D6D1F7E46AD00188174 /* DLQData.m in Sources */,
 				214E1BA51CD5FE17004F8083 /* OSSTask.m in Sources */,
 				21028BF91BA9AC3600C2A6BA /* OSSClient.m in Sources */,
 				21028BFD1BA9AC3600C2A6BA /* OSSLog.m in Sources */,

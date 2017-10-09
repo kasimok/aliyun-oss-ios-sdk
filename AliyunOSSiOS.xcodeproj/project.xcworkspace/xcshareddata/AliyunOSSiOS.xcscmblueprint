@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "B0F6AD5DAC24680B6CC05FB8937B5439FF80EBAF",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "EA8D90EFC627F92814F5D85DAFCF3BFC25BA229F" : 9223372036854775807,
+    "B0F6AD5DAC24680B6CC05FB8937B5439FF80EBAF" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "48AE90F1-F54B-4E15-9201-4CC6E7E8037A",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "EA8D90EFC627F92814F5D85DAFCF3BFC25BA229F" : "..\/research\/ios\/TestDownLoad",
+    "B0F6AD5DAC24680B6CC05FB8937B5439FF80EBAF" : "aliyun-oss-ios-sdk\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "AliyunOSSiOS",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "AliyunOSSiOS.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/aliyun\/aliyun-oss-ios-sdk.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "B0F6AD5DAC24680B6CC05FB8937B5439FF80EBAF"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/llMrRongll\/TestDownLoad.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "EA8D90EFC627F92814F5D85DAFCF3BFC25BA229F"
+    }
+  ]
+}

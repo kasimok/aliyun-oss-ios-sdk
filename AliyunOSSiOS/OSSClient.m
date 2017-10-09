@@ -15,6 +15,7 @@
 #import "OSSNetworking.h"
 #import "OSSXMLDictionary.h"
 #import "OSSReachabilityManager.h"
+#import "DLQMultiDownloadQueue.h"
 
 /**
  * extend OSSRequest to include the ref to networking request object
@@ -872,4 +873,36 @@
         }
     }
 }
+
+- (void)getFileTotalLengthWithURL:(NSString *)url
+                       completion:(void(^)(NSInteger length))completion{
+    NSURL *URL = [NSURL URLWithString:url];
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:URL];
+    request.HTTPMethod = @"HEAD";
+    //    request.HTTPMethod = @"GET";
+    NSURLSession *session = [NSURLSession sharedSession];
+    NSURLSessionDataTask *dataTask = [session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+        
+        if ([response isKindOfClass:[NSHTTPURLResponse class]]) {
+            NSHTTPURLResponse *tmpResponse = (NSHTTPURLResponse *)response;
+            NSLog(@"allHeaderFields:%@", tmpResponse.allHeaderFields);
+        }
+        NSInteger fileTotalLength = response.expectedContentLength;
+        completion(fileTotalLength);
+    }];
+    [dataTask resume];
+}
+
+
+- (void)multiDownload:(NSURL *)url{
+    [self getFileTotalLengthWithURL:url.absoluteString completion:^(NSInteger length) {
+        //multiDownload
+        DLQMultiDownloadQueue *multiDownload = [[DLQMultiDownloadQueue alloc] init];
+        [multiDownload multiDownloadWithFileLength:length url:url];
+//        self.multiDownloadQueue = multiDownload;
+    }];
+    
+}
+
+
 @end

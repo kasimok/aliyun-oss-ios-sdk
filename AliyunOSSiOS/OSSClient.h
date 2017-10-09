@@ -264,6 +264,9 @@ Aborts the multipart upload by the specified upload Id.
  */
 - (OSSTask *)resumableUpload:(OSSResumableUploadRequest *)request;
 
+
+- (void)multiDownload:(NSURL *)url;
+
 /**
  Checks if the object exists
  @bucketName Object's bucket name
